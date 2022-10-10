@@ -10,7 +10,7 @@ export const MAIDS = [
         image: Misaki,
         featured: true,
         description:
-            "Misaki Description Here"
+            "Misaki is a student council president of Seika High."
     },
     {
         id: 1,
@@ -18,7 +18,7 @@ export const MAIDS = [
         image: MeyRin,
         featured: false,
         description:
-            'Mey-Rin Description Here'
+            'Mey-Rin is a determined, strong-willed sniper who seeks to prove her worth.'
     },
     {
         id: 2,
@@ -26,7 +26,7 @@ export const MAIDS = [
         image: Tsumugi,
         featured: false,
         description:
-            'Tsumugi Description Here'
+            'Tsumugi is a wealthy, cheery, cute girl with a gentle personality who plays the keyboard and is the main musical composer in the band Ho-kago Tea Time.'
     },
     {
         id: 3,
@@ -34,6 +34,6 @@ export const MAIDS = [
         image: Rem,
         featured: false,
         description:
-            'Rem Description Here'
+            'Rem tends to speak in a superficially polite manner and sometimes acts without thinking.'
     }
 ];
