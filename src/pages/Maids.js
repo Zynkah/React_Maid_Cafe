@@ -9,32 +9,28 @@ const Maids = () => {
       <Row className="row-content">
         <Col sm="6">
           <h3>Our Mission</h3>
+          <hr />
           <p>
-            We present a curated database of the best campsites in the vast
-            woods and backcountry of the World Wide Web Wilderness. We increase
-            access to adventure for the public while promoting safe and
-            respectful use of resources. The expert wilderness trekkers on our
-            staff personally verify each campsite to make sure that they are up
-            to our standards. We also present a platform for campers to share
-            reviews on campsites they have visited with each other.
+          Maid cafes focus on providing an escape from the home and work spheres. Furthermore, according to anthropologists such as Anne Allison, a maid cafe lacks the same sexual and caretaker undertones that hostess bars do. Maids encapsulate a more pure form that provides an alternate world to patrons.
           </p>
         </Col>
         <Col sm="6">
           <Card>
             <CardHeader className="bg-light text-center">
-              <h3>Facts at a Glance</h3>
+              <h3>Banquet Rooms</h3>
             </CardHeader>
             <CardBody>
               <dl className="row">
-                <dt className="col-6">Founded</dt>
-                <dd className="col-6">February 3, 2016</dd>
-                <dt className="col-6">No. of Campsites in 2019</dt>
-                <dd className="col-6">563</dd>
-                <dt className="col-6">No. of Reviews in 2019</dt>
-                <dd className="col-6">4388</dd>
-                <dt className="col-6">Employees</dt>
-                <dd className="col-6">42</dd>
+                <dt className="col-6">Executive Suite</dt>
+                <dd className="col-6">$350</dd>
+                <dt className="col-6">Presidential Room</dt>
+                <dd className="col-6">$400</dd>
+                <dt className="col-6">Royal Ballroom</dt>
+                <dd className="col-6">$500</dd>
+                <dt className="col-6">Queen's Gardens</dt>
+                <dd className="col-6">$600</dd>
               </dl>
+              <p><small>**Base room prices, charges may change depending on package selected.**</small></p>
             </CardBody>
           </Card>
         </Col>
@@ -43,15 +39,16 @@ const Maids = () => {
             <CardBody>
               <blockquote className="blockquote">
                 <p>
-                  I will not follow where the path may lead, but I will go where
-                  there is no path, and I will leave a trail.
+                To greet my master in a tidy manner every day. That is a maid's duty.
+                <br/> 
+                The household shall purge the filth from this manor!
                 </p>
                 <footer className="blockquote-footer">
-                  <p>
-                    Muriel Strode,{" "}
+                  <p><small>
+                    Mey-Rin,{" "}
                     <cite title="Source Title">
-                      "Wind-Wafted Wild Flowers" - The Open Court, 1903
-                    </cite>
+                      "Book of Circus" - Black Butler, 2020
+                    </cite></small>
                   </p>
                 </footer>
               </blockquote>
@@ -62,6 +59,7 @@ const Maids = () => {
       <Row className="row-content">
         <Col xs="12">
           <h3>Our Maids</h3>
+          <hr />
         </Col>
         <MaidsList />
       </Row>

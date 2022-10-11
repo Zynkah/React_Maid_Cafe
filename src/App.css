@@ -21,27 +21,48 @@ h3,
     color: salmon;
 }
 
+.link {
+    color:indianred;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: salmon;
+}
+
 dt {
+    color: salmon;
+}
+
+small {
     color: pink;
+    font-style: italic;
 }
 
 dl {
     color: indianred;
 }
 
-h2 {
+p {
     color: salmon;
 }
 
-p {
+i {
+    color: indianred;
+}
+
+div {
     color: salmon;
+}
+
+blockquote {
+    text-align: center;
 }
 
 .card-img-overlay .card-title {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 
 .row-content {
     padding: 50px 0;
@@ -66,10 +87,6 @@ p {
     height: 100%;
     margin-right: 2rem;
     max-width: 4rem;
-}
-
-i {
-    color: indianred;
 }
 
 .navbar-dark {
