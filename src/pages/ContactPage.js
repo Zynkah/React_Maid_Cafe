@@ -37,7 +37,7 @@ const ContactPage = () => {
               <a
                 role="button"
                 id="email"
-                class="btn btn-link"
+                className="btn btn-link"
                 href="mailto:ZynkahsMaidCafe@email.com"
               >
                 <i className="fa fa-envelope-o"></i> ZynkahsMaidCafe@email.com

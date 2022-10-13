@@ -35,8 +35,8 @@ const Maids = () => {
               <p className="text-center"><small>**Base room prices, charges may change depending on package selected.**</small></p>
             </CardBody>
           </Card>
-          <p>
             <hr />
+            <p>
           There are multiple packages to choose from and we make special events memorable. We wish to make your special day as special as you! Please consider us for your next big event, birthday, holiday, or anything you wish to celebrate.
           </p>
         </Col>
