@@ -26,7 +26,7 @@ export const MAIDS = [
         image: Tsumugi,
         featured: false,
         description:
-            'Tsumugi is a wealthy, cheery, cute girl with a gentle personality who plays the keyboard and is the main musical composer in the band Ho-kago Tea Time.'
+            'Tsumugi plays the keyboard and is the main musical composer in the band Ho-kago Tea Time.'
     },
     {
         id: 3,
