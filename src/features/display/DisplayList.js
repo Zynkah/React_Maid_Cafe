@@ -1,11 +1,15 @@
-import { Col, Row } from 'reactstrap';
-import AnimatedDisplayCard from './AnimatedDisplayCard';
-import { selectFeaturedCampsite } from '../campsites/campsitesSlice';
-import { selectFeaturedBanquet } from '../banquets/banquetsSlice';
-import { selectFeaturedMaids } from '../maids/maidsSlice';
+import { Col, Row } from "reactstrap";
+import AnimatedDisplayCard from "./AnimatedDisplayCard";
+import { selectFeaturedMenu } from "../menu/menusSlice";
+import { selectFeaturedBanquet } from "../banquets/banquetsSlice";
+import { selectFeaturedMaids } from "../maids/maidsSlice";
 
 const DisplayList = () => {
-  const items = [selectFeaturedCampsite(), selectFeaturedBanquet(), selectFeaturedMaids()];
+  const items = [
+    selectFeaturedMenu(),
+    selectFeaturedBanquet(),
+    selectFeaturedMaids(),
+  ];
 
   return (
     <Row>

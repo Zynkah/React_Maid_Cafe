@@ -1,7 +1,7 @@
 import { Card, CardImg, CardText, CardBody, Col } from "reactstrap";
 
-const CampsiteDetail = ({ campsite }) => {
-  const { image, name, description } = campsite;
+const MenuDetail = ({ menu }) => {
+  const { image, name, description } = menu;
 
   return (
     <Col md="5" className="m-1">
@@ -15,4 +15,4 @@ const CampsiteDetail = ({ campsite }) => {
   );
 };
 
-export default CampsiteDetail;
+export default MenuDetail;

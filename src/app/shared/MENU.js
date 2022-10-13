@@ -46,7 +46,7 @@ import cremeBrulee from '../assets/img/cremeBrulee.jpg';
 import tiramisu from '../assets/img/tiramisu.jpg';
 import tuxedoCake from '../assets/img/tuxedoCake.jpg';
 
-export const CAMPSITES = [
+export const MENU = [
     {
         id: 0,
         name: 'Americano',

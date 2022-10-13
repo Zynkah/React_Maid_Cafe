@@ -1,7 +1,7 @@
 import { COMMENTS } from "../../app/shared/COMMENTS";
 
-export const selectCommentsByCampsiteId = (campsiteId) => {
+export const selectCommentsByMenuId = (menuId) => {
     return COMMENTS.filter(
-        (comment) => comment.campsiteId === parseInt(campsiteId)
+        (comment) => comment.menuId === parseInt(menuId)
     );
 };

@@ -10,11 +10,11 @@ import {
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { validateCommentForm } from "../../utils/validateCommentForm";
 
-const CommentForm = ({ campsiteId }) => {
+const CommentForm = ({ menuId }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const handleSubmit = (values) => {
     const comment = {
-      campsiteId: parseInt(campsiteId),
+      menuId: parseInt(menuId),
       rating: values.rating,
       author: values.author,
       text: values.commentText,

@@ -40,7 +40,7 @@ const ContactPage = () => {
                 class="btn btn-link"
                 href="mailto:ZynkahsMaidCafe@email.com"
               >
-                <i class="fa fa-envelope-o"></i> ZynkahsMaidCafe@email.com
+                <i className="fa fa-envelope-o"></i> ZynkahsMaidCafe@email.com
               </a>
             </CardBody>
           </Card>

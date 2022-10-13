@@ -3,8 +3,8 @@ import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import CampsitesDirectoryPage from "./pages/CampsitesDirectoryPage";
-import CampsiteDetailPage from './pages/CampsiteDetailPage';
+import MenuDirectoryPage from './pages/MenuDirectoryPage';
+import MenuDetailPage from './pages/MenuDetailPage';
 import "./App.css";
 import Maids from './pages/Maids';
 
@@ -14,12 +14,12 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/maids' element={<Maids />} />
+        <Route path='maids' element={<Maids />} />
         <Route path='contact' element={<ContactPage />} />
-        <Route path='directory' element={<CampsitesDirectoryPage />} />
+        <Route path='menu' element={<MenuDirectoryPage />} />
         <Route
-          path='directory/:campsiteId'
-          element={<CampsiteDetailPage />}
+          path='menu/:menuId'
+          element={<MenuDetailPage />}
           />
       </Routes>
       <Footer />
