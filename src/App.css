@@ -61,7 +61,13 @@ blockquote {
 
 .card-img-overlay .card-title {
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(129, 104, 104, 0.4);
+    width: max-content;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 0px 2px;
+    margin: auto;
+    font-family: lobster;
 }
 
 .row-content {

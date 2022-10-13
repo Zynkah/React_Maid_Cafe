@@ -53,7 +53,7 @@ export const MENU = [
         image: americano,
         featured: false,
         description:
-            'americano description here'
+            'A type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from, traditionally brewed coffee.'
     },
     {
         id: 1,
@@ -61,7 +61,7 @@ export const MENU = [
         image: cappuccino,
         featured: false,
         description:
-            'cappuccino description here'
+            'An espresso based coffee drink that originated in Italy and is prepared with steamed milk foam.'
     },
     {
         id: 2,
@@ -69,7 +69,7 @@ export const MENU = [
         image: flatWhite,
         featured: false,
         description:
-            'flat White description here'
+            'A coffee drink consisting of espresso with microfoam.'
     },
     {
         id: 3,
@@ -77,7 +77,7 @@ export const MENU = [
         image: latte,
         featured: false,
         description:
-            "latte description here"
+            "A milk coffee that boasts a silky layer of foam as a real highlight to the drink. A true latte will be made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top."
     },
     {
         id: 4,
@@ -85,7 +85,7 @@ export const MENU = [
         image: macchiato,
         featured: false,
         description:
-            'macchiato descriptipon here'
+            'An espresso coffee drink with a small amount of milk, usually foamed. In Italian, macchiato means "stained" or "spotted", so the literal translation of caffè macchiato is "stained coffee" or "marked coffee".'
     },
     {
         id: 5,
@@ -93,7 +93,7 @@ export const MENU = [
         image: mocha,
         featured: true,
         description:
-            'mocha description here'
+            'A chocolate-flavoured warm beverage that is a variant of a caffè latte.'
     },
     {
         id: 6,
@@ -125,7 +125,7 @@ export const MENU = [
         image: peppermint,
         featured: false,
         description:
-            'Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground.'
+            'description here'
     },
     {
         id: 10,
@@ -225,16 +225,16 @@ export const MENU = [
     },
     {
         id: 22,
-        name: 'Turkey Club',
-        image: turkeyClub,
+        name: 'Wedge',
+        image: wedge,
         featured: false,
         description:
             'description here'
     },
     {
         id: 23,
-        name: 'Wedge',
-        image: wedge,
+        name: 'Waldorf Chicken',
+        image: waldorfChicken,
         featured: false,
         description:
             'description here'
@@ -281,8 +281,8 @@ export const MENU = [
     },
     {
         id: 29,
-        name: 'Waldorf Chicken',
-        image: waldorfChicken,
+        name: 'Turkey Club',
+        image: turkeyClub,
         featured: false,
         description:
             'description here'
