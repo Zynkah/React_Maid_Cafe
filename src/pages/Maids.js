@@ -1,6 +1,10 @@
 import { Col, Row, Container, Card, CardBody, CardHeader } from "reactstrap";
 import SubHeader from "../components/SubHeader";
 import MaidsList from "../features/maids/MaidsList";
+import presidentsRoom from '../app/assets/img/presidentsRoom.jpg';
+import queensGarden from '../app/assets/img/queensGardens.jpg';
+import royalBallroom from '../app/assets/img/royalBallroom.jpg';
+import executiveSuite from '../app/assets/img/executiveSuite.jpg';
 
 const Maids = () => {
   return (
@@ -13,14 +17,12 @@ const Maids = () => {
           <p>
           Maid cafes focus on providing an escape from the home and work spheres. Furthermore, according to anthropologists such as Anne Allison, a maid cafe lacks the same sexual and caretaker undertones that hostess bars do. Maids encapsulate a more pure form that provides an alternate world to patrons.
           </p>
-        </Col>
-        <Col sm="6">
-          <Card>
+           <Card>
             <CardHeader className="bg-light text-center">
-              <h3>Banquet Rooms</h3>
+              <h3>Banquet Rooms <br/> <small>Prices</small></h3>
             </CardHeader>
             <CardBody>
-              <dl className="row">
+              <dl className="row text-center">
                 <dt className="col-6">Executive Suite</dt>
                 <dd className="col-6">$350</dd>
                 <dt className="col-6">Presidential Room</dt>
@@ -30,7 +32,24 @@ const Maids = () => {
                 <dt className="col-6">Queen's Gardens</dt>
                 <dd className="col-6">$600</dd>
               </dl>
-              <p><small>**Base room prices, charges may change depending on package selected.**</small></p>
+              <p className="text-center"><small>**Base room prices, charges may change depending on package selected.**</small></p>
+            </CardBody>
+          </Card>
+          <p>
+            <hr />
+          There are multiple packages to choose from and we make special events memorable. We wish to make your special day as special as you! Please consider us for your next big event, birthday, holiday, or anything you wish to celebrate.
+          </p>
+        </Col>
+        <Col sm="6">
+        <Card>
+            <CardHeader className="text-center">Banquet Rooms</CardHeader>
+              <CardBody>
+                <dl className="row">
+                 <dt className="col-md-6 text-center"><small>executive suite</small> <br /> <img src={executiveSuite} alt="executive suite" className="d-block w-100" /> </dt>
+                 <dd className="col-md-6 text-center"><small>presidents room</small> <br /> <img src={presidentsRoom} alt="presidents room" className="d-block w-100" /> </dd>
+                 <dt className="col-md-6 text-center"><small>royal ballroom</small> <br /> <img src={royalBallroom} alt="royal ballroom" className="d-block w-100" /> </dt>
+                 <dd className="col-md-6 text-center"><small>queens garden</small> <br /> <img src={queensGarden} alt="queens garden" className="d-block w-100" /> </dd>
+                </dl>
             </CardBody>
           </Card>
         </Col>
