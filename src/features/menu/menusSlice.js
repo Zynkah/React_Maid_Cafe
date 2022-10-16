@@ -1,5 +1,18 @@
 import { MENU } from '../../app/shared/MENU'
 
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
+   menuArray: MENU
+};
+
+const menuSlice = createSlice({
+name: 'menu',
+initialState
+});
+
+export const menuReducer = menuSlice.reducer;
+
 export const selectAllMenu = () => {
     return MENU
 };
