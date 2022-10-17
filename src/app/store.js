@@ -1,4 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
+import logger from 'redux-logger';
 import { menuReducer } from '../features/menu/menusSlice';
 import { commentsReducer } from '../features/comments/commentsSlice';
 import { maidsReducer } from '../features/maids/maidsSlice';
@@ -11,4 +12,5 @@ export const store = configureStore({
     maids: maidsReducer,
     banquets: banquetsReducer
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
 });
