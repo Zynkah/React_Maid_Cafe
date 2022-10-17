@@ -9,17 +9,26 @@ import {
 } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { validateCommentForm } from "../../utils/validateCommentForm";
+import { useDispatch } from "react-redux";
+import { addComment } from './commentsSlice';
 
-const CommentForm = ({ menuId }) => {
+const CommentForm = ({ menuId }) => { 
+
   const [modalOpen, setModalOpen] = useState(false);
+
+  const dispatch = useDispatch();
+
   const handleSubmit = (values) => {
     const comment = {
       menuId: parseInt(menuId),
       rating: values.rating,
       author: values.author,
       text: values.commentText,
+      date: new Date(Date.now()).toISOString()
     };
+
     console.log(comment);
+    dispatch(addComment(comment));
     setModalOpen(false);
   };
   return (
