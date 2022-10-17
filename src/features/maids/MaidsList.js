@@ -1,9 +1,10 @@
 import { Col } from "reactstrap";
 import Maids from "./Maids";
 import { selectAllMaids } from './maidsSlice';
+import { useSelector } from "react-redux";
 
 const MaidsList = () => {
-    const maids = selectAllMaids();
+    const maids = useSelector(selectAllMaids);
 
     return (
         <Col className="mt-4">
