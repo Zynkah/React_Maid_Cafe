@@ -3,13 +3,14 @@ import AnimatedDisplayCard from "./AnimatedDisplayCard";
 import { selectFeaturedMenu } from "../menu/menusSlice";
 import { selectFeaturedBanquet } from "../banquets/banquetsSlice";
 import { selectFeaturedMaids } from "../maids/maidsSlice";
+import { useSelector } from "react-redux";
 
 const DisplayList = () => {
-  const items = [
-    selectFeaturedMenu(),
-    selectFeaturedBanquet(),
-    selectFeaturedMaids(),
-  ];
+  const items = useSelector((state) => [
+    selectFeaturedMenu(state),
+    selectFeaturedBanquet(state),
+    selectFeaturedMaids(state),
+  ]);
 
   return (
     <Row>

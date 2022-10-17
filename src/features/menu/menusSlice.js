@@ -13,18 +13,18 @@ initialState
 
 export const menuReducer = menuSlice.reducer;
 
-export const selectAllMenu = () => {
-    return MENU
+export const selectAllMenu = (state) => {
+    return state.menu.menuArray;
 };
 
 export const selectRandomMenu = () => {
     return MENU[Math.floor(MENU.length * Math.random())];
 };
 
-export const selectMenuById = (id) => {
-    return MENU.find((menu) => menu.id === parseInt(id));
+export const selectMenuById = (id) => (state) => {
+    return state.menu.menuArray.find((menu) => menu.id === parseInt(id));
 };
 
-export const selectFeaturedMenu = () => {
-    return MENU.find((menu) => menu.featured);
+export const selectFeaturedMenu = (state) => {
+    return state.menu.menuArray.find((menu) => menu.featured);
 };

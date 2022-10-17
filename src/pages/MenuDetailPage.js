@@ -4,10 +4,11 @@ import { selectMenuById } from '../features/menu/menusSlice';
 import MenuDetail from "../features/menu/MenuDetail";
 import CommentsList from "../features/comments/CommentsList";
 import SubHeader from "../components/SubHeader";
+import { useSelector } from "react-redux";
 
 const MenuDetailPage = () => {
   const { menuId } = useParams();
-  const menu = selectMenuById(menuId);
+  const menu = useSelector(selectMenuById(menuId));
 
   return (
     <Container>
