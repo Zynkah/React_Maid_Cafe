@@ -9,6 +9,7 @@ import {
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import Logo from "../app/assets/img/logo.jpg";
+import CartForm from "../features/cart/CartForm";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,6 +44,7 @@ const Header = () => {
             </NavLink>
           </NavItem>
         </Nav>
+        <CartForm />
       </Collapse>
     </Navbar>
   );
