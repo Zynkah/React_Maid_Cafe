@@ -1,7 +1,7 @@
 import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
 import { Link } from "react-router-dom";
 
-const MenuCard = ({ menu }) => {
+const MenuCard = ({ menu, onClick }) => {
   const { id, image, name } = menu;
   return (
     <Link to={`${id}`}>
@@ -12,7 +12,7 @@ const MenuCard = ({ menu }) => {
                 alt={name}
             /> 
         <CardImgOverlay>
-        <CardTitle>{name}</CardTitle>
+        <CardTitle onClick={onClick}>{name}</CardTitle>
         </CardImgOverlay>
       </Card>
     </Link>

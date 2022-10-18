@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Modal, ModalHeader, ModalBody, Button } from "reactstrap";
 
-
 const CartForm = () => {
   const [cartModalOpen, setCartModalOpen] = useState(false);
 
@@ -18,6 +17,9 @@ const CartForm = () => {
       <Modal isOpen={cartModalOpen}>
         <ModalHeader>Cart</ModalHeader>
         <ModalBody>
+          <Button outline onClick={() => setCartModalOpen(false)}>
+            Keep shopping
+          </Button>
         </ModalBody>
       </Modal>
     </>
