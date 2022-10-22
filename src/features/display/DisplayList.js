@@ -10,8 +10,7 @@ const DisplayList = () => {
   const items = useSelector((state) => [
     selectFeaturedMenu(state),
     selectFeaturedBanquet(state),
-    selectFeaturedMaids(state),
-    selectCartItems(state)
+    selectFeaturedMaids(state)
   ]);
 
   return (
