@@ -33,7 +33,7 @@ const CommentForm = ({ menuId }) => {
   };
   return (
     <>
-      <Button onClick={() => setModalOpen(true)}>
+      <Button outline onClick={() => setModalOpen(true)}>
         <i className="fa fa-pencil fa-lg" /> Add Comment
       </Button>
       <Modal isOpen={modalOpen}>
@@ -83,7 +83,7 @@ const CommentForm = ({ menuId }) => {
                   className="form-control"
                 />
               </FormGroup>
-              <Button type="submit" color="primary">
+              <Button outline type="submit">
                 Submit
               </Button>
             </Form>
