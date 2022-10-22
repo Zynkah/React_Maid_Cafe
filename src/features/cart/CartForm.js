@@ -1,5 +1,8 @@
-import { useState } from "react";
+import {  useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Modal, ModalHeader, ModalBody, Button } from "reactstrap";
+import { removeItem } from './cartSlice';
+
 
 const CartForm = () => {
   const [cartModalOpen, setCartModalOpen] = useState(false);
@@ -17,6 +20,7 @@ const CartForm = () => {
       <Modal isOpen={cartModalOpen}>
         <ModalHeader>Cart</ModalHeader>
         <ModalBody>
+        <Checkout />
           <Button outline onClick={() => setCartModalOpen(false)}>
             Keep shopping
           </Button>
@@ -26,3 +30,19 @@ const CartForm = () => {
   );
 };
 export default CartForm;
+
+export const Checkout = () => {
+ const cartList = useSelector(state => state.cart.items)
+ const dispatch = useDispatch();
+ return (
+    <ul>
+    {cartList.map((item) => 
+    <li 
+      onClick={() => dispatch(removeItem(item))}
+    >
+      {item.name} {' '}
+      {item.price}
+    </li>) }
+    </ul>
+  )
+}
