@@ -4,6 +4,7 @@ import { addItem } from "../cart/cartSlice";
 
 const MenuDetail = ({ menu }) => {
   const { image, name, description, price } = menu;
+
   const dispatch = useDispatch();
   const handleSubmit = () => {
     dispatch(addItem(menu));
@@ -20,7 +21,7 @@ const MenuDetail = ({ menu }) => {
             {" Price: "}
             {price}
           </CardText>
-          <Button outline onClick={{ handleSubmit }}>
+          <Button outline onClick={ handleSubmit }>
             Add to <i className="fa fa-shopping-cart" />
           </Button>
         </CardBody>
