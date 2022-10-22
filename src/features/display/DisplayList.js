@@ -3,7 +3,6 @@ import AnimatedDisplayCard from "./AnimatedDisplayCard";
 import { selectFeaturedMenu } from "../menu/menusSlice";
 import { selectFeaturedBanquet } from "../banquets/banquetsSlice";
 import { selectFeaturedMaids } from "../maids/maidsSlice";
-import { selectCartItems } from '../cart/cartSlice';
 import { useSelector } from "react-redux";
 
 const DisplayList = () => {
