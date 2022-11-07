@@ -36,9 +36,9 @@ export const Checkout = () => {
  const dispatch = useDispatch();
  return (
     <ul>
-    {cartList.map((item) => 
-    <li 
-      onClick={() => dispatch(removeItem(item))}
+    {cartList.map((item, index) => 
+    <li key={index}
+      onClick={() => dispatch(removeItem(index))}
     >
       {item.name} {' '}
       {item.price}
