@@ -26,7 +26,7 @@ import tomatoBasil from '../assets/img/tomatoBasil.jpg';
 import caesar from '../assets/img/caesar.jpg';
 import crabLouie from '../assets/img/crabLouie.jpg';
 import nicoise from '../assets/img/nicoise.jpg';
-import steakCobb from '../assets/img/steakCobb.jpg';
+// import steakCobb from '../assets/img/steakCobb.jpg';
 import turkeyClub from '../assets/img/turkeyClub.jpg';
 import wedge from '../assets/img/wedge.jpg';
 
@@ -236,15 +236,15 @@ export const MENU = [
         description:
             'Nicoise is essentially a French composed salad, much like our American Cobb salad, but with tuna, green beans, and potatoes, instead of chicken, bacon, and avocado. Salad Niçoise hails from Nice, on the Mediterranean Sea, though like so many foods we enjoy here of French origin, has changed a bit to adapt to our tastes.'
     },
-    {
-        id: 21,
-        name: 'Steak Cobb',
-        image: steakCobb,
-        featured: false,
-        price: '$6.00',
-        description:
-            'Steak Cobb in a bowl layer in the salad greens, tomatoes, egg, cheese and avocado slices. Sprinkle all with salt and pepper. Once the steak has rested slice thin strips against the grain. '
-    },
+    // {
+    //     id: 21,
+    //     name: 'Steak Cobb',
+    //     image: steakCobb,
+    //     featured: false,
+    //     price: '$6.00',
+    //     description:
+    //         'Steak Cobb in a bowl layer in the salad greens, tomatoes, egg, cheese and avocado slices. Sprinkle all with salt and pepper. Once the steak has rested slice thin strips against the grain. '
+    // },
     {
         id: 22,
         name: 'Wedge',
