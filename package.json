@@ -16,7 +16,7 @@
     "react-redux": "^8.1.2",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
-    "react-spring": "^9.7.2",
+    "react-spring": "^9.7.3",
     "reactstrap": "^9.0.1",
     "redux-logger": "^3.0.6",
     "typeface-lobster": "^1.1.13",
