@@ -81,6 +81,10 @@ blockquote {
     padding: 20px 0;
     margin-top: 2rem;
     color: indianred;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .navbar-brand {
