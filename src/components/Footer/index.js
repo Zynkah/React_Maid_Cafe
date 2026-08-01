@@ -4,44 +4,28 @@ const Footer = () => {
   return (
     <SFooterWrapper>
       <div>
-        <SFooterLinks
-          role="button"
-          className="btn btn-link footer-link"
-          href="tel:+12065551234"
-        >
+        <SFooterLinks role="button" href="tel:+12065551234" target="_blank">
           <i className="fa fa-phone" />
         </SFooterLinks>
         <SFooterLinks
           role="button"
-          className="btn btn-link"
           href="mailto:notreal@notreal.co"
+          target="_blank"
         >
           <i className="fa fa-envelope-o" />
         </SFooterLinks>
       </div>
       <div>
-        <SFooterLinks
-          className="btn btn-social-icon btn-outline-instagram"
-          href="http://instagram.com/"
-        >
+        <SFooterLinks href="http://instagram.com/" target="_blank">
           <i className="fa fa-instagram" />
         </SFooterLinks>
-        <SFooterLinks
-          className="btn btn-social-icon btn-outline-facebook"
-          href="http://www.facebook.com/"
-        >
+        <SFooterLinks href="http://www.facebook.com/" target="_blank">
           <i className="fa fa-facebook" />
         </SFooterLinks>{" "}
-        <SFooterLinks
-          className="btn btn-social-icon btn-outline-twitter"
-          href="http://twitter.com/"
-        >
+        <SFooterLinks href="http://twitter.com/" target="_blank">
           <i className="fa fa-twitter" />
         </SFooterLinks>{" "}
-        <SFooterLinks
-          className="btn btn-social-icon btn-outline-google"
-          href="http://youtube.com/"
-        >
+        <SFooterLinks href="http://youtube.com/" target="_blank">
           <i className="fa fa-youtube" />
         </SFooterLinks>
       </div>
