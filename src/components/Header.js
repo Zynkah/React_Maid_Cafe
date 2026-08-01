@@ -15,7 +15,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Navbar dark color="primary" sticky="top" expand="md">
+    <Navbar dark color="primary" sticky="top" expand="lg">
       <NavbarBrand className="ms-5" href="/">
         <img src={Logo} alt="nucamp logo" className="float-start" />
         <h1 className="mt-1">Zynkah's Maid Cafe</h1>

@@ -1,126 +1,143 @@
 body {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
 h2,
 h3,
 .card-body > .card-title {
-    font-family: 'Lobster', cursive;
-    color:indianred;
+  font-family: "Lobster", cursive;
+  color: indianred;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+  width: 100%;
 }
 
 .card-title {
-    font-weight: 500;
-    font-size: 1.25rem;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 .card-header {
-    font-family: 'Lobster', cursive;
-    font-size: 1.5rem;
-    color: salmon;
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  color: salmon;
 }
 
 .link {
-    color:indianred;
-    text-decoration: none;
+  color: indianred;
+  text-decoration: none;
 }
 
 .link:hover {
-    color: salmon;
+  color: salmon;
 }
 
 dt {
-    color: salmon;
+  color: salmon;
 }
 
 small {
-    color: pink;
-    font-style: italic;
+  color: pink;
+  font-style: italic;
 }
 
 dl {
-    color: indianred;
+  color: indianred;
 }
 
 p {
-    color: salmon;
+  color: salmon;
 }
 
 i {
-    color: indianred;
+  color: indianred;
+  margin-right: 6px;
 }
 
 div {
-    color: salmon;
+  color: salmon;
 }
 
 blockquote {
-    text-align: center;
+  text-align: center;
 }
 
 .card-img-overlay .card-title {
-    color: white;
-    background-color: rgba(129, 104, 104, 0.4);
-    width: max-content;
-    font-size: 1.6rem;
-    border-radius: 10px;
-    padding: 0px 2px;
-    margin: auto;
-    font-family: lobster;
+  color: white;
+  background-color: rgba(129, 104, 104, 0.4);
+  width: max-content;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  padding: 0px 2px;
+  margin: auto;
+  font-family: lobster;
 }
 
 .row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
 }
 
 .site-footer {
-    background-image: linear-gradient(linen, salmon);
-    padding: 20px 0;
-    margin-top: 2rem;
-    color: indianred;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  background-image: linear-gradient(linen, salmon);
+  padding: 20px 0;
+  margin-top: 2rem;
+  color: indianred;
+  width: 100%;
+}
+
+.site-footer a {
+  text-decoration: none;
+  color: #fff;
+  text-wrap: nowrap;
 }
 
 .navbar-brand {
-    max-width: 4rem;
-    margin-right: 2rem;
+  max-width: 4rem;
+  margin-right: 2rem;
 }
 
 .navbar-brand img {
-    width: 100%;
-    height: 100%;
-    margin-right: 2rem;
-    max-width: 4rem;
+  width: 100%;
+  height: 100%;
+  margin-right: 2rem;
+  max-width: 4rem;
 }
 
 .navbar-dark {
-    background-image: linear-gradient(to right, linen, salmon);
-    margin-bottom: 2rem;
-    min-height: 8rem;
+  background-image: linear-gradient(to right, linen, salmon);
+  margin-bottom: 2rem;
+  min-height: 8rem;
+  width: 100%;
 }
 
 .page-enter {
-    opacity: 0;
-    transform: translateX(-100%);
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
 .page-enter-active {
-    opacity: 1;
-    transform: translateX(0%);
-    transition: 300ms ease-out;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 300ms ease-out;
 }
 
 .page-exit {
-    opacity: 1;
+  opacity: 1;
 }
 
 .page-exit-active {
-    opacity: 0;
-    transition: 300ms ease-in;
+  opacity: 0;
+  transition: 300ms ease-in;
 }
